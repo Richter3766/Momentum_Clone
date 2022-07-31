@@ -10,45 +10,57 @@ body {
     background-size: cover;
     background-image: url("../img/005.jpg");
     color: white;
-
+    text-align: center;
 }
 
+.top{
+    min-height: 150px;
+}
+
+.center{
+    align-items: center;
+}
+
+.bottom{
+    min-height: 100px;
+}
+#login-form{
+    min-height: 100px;
+}
 #weather {
-    text-align: right;
     border-bottom: 100px;
+    text-align: right;
 }
 #clock {
     margin: 0%;
     font-size: 1050%;
     font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-align: center;
     position: relative;
  
 }
 
 #greeting {
     margin: 0%;
-    text-align: center;
     font-size: 310% ;
     position: relative;
- 
+    min-height: 100px;
 }
 
 #quotes {
-    text-align: center;
     position: relative;
+
     bottom: 5px;
 }
 
-#todo-form{
+#focus-form{
     font-size: 36px;
     position: relative;
-    text-align: center;
+    
 }
 
-#todo-list{
+#focus-item{
     font-size: 36px;
-    text-align: center;
+    
 }
 
 .block{
@@ -63,4 +75,8 @@ input[type="text"]{
     color: white;
     width: 50%;
     font-size: 36px;
+}
+
+input::placeholder{
+    color: white;
 }
