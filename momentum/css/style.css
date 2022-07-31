@@ -1,0 +1,66 @@
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+/* background */
+body {
+    background-size: cover;
+    background-image: url("../img/005.jpg");
+    color: white;
+
+}
+
+#weather {
+    text-align: right;
+    border-bottom: 100px;
+}
+#clock {
+    margin: 0%;
+    font-size: 1050%;
+    font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    position: relative;
+ 
+}
+
+#greeting {
+    margin: 0%;
+    text-align: center;
+    font-size: 310% ;
+    position: relative;
+ 
+}
+
+#quotes {
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+}
+
+#todo-form{
+    font-size: 36px;
+    position: relative;
+    text-align: center;
+}
+
+#todo-list{
+    font-size: 36px;
+    text-align: center;
+}
+
+.block{
+    display: block;
+}
+
+input[type="text"]{
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid white;
+    text-align: center;
+    color: white;
+    width: 50%;
+    font-size: 36px;
+}
