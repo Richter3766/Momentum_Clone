@@ -36,7 +36,6 @@ body {
     font-size: 1050%;
     font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: relative;
- 
 }
 
 #greeting {
@@ -73,10 +72,20 @@ input[type="text"]{
     border-bottom: 2px solid white;
     text-align: center;
     color: white;
-    width: 50%;
+    width: 33%;
     font-size: 36px;
 }
 
 input::placeholder{
     color: white;
+}
+
+button {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    color: white;
+    text-align: center;
 }
