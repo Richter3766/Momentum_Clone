@@ -2,14 +2,15 @@ const focusForm = document.querySelector("#focus-form");
 const input = focusForm.querySelector("#focus-input input");
 const focusDiv = document.querySelector("#focus-item");
 const delButton = focusDiv.querySelector("button");
-
+const inputSpan = focusForm.querySelector("#focus-input span");
 
 function handleSubmit(event){
     event.preventDefault();
     const newFocus= input.value;
     input.value = ""
     localStorage.setItem("focus", newFocus);
-    focusForm.classList.add(HIDDEN_CLASSNAME);
+    inputSpan.innerText = "today";
+    input.classList.add(HIDDEN_CLASSNAME);
     focusDiv.classList.remove(HIDDEN_CLASSNAME);
     paintFocus(newFocus);
 }
@@ -23,7 +24,8 @@ function paintFocus(newFocus){
 function handleDel(event){
     event.preventDefault();
     localStorage.removeItem("focus");
-    focusForm.classList.remove(HIDDEN_CLASSNAME);
+    inputSpan.innerText = "What is your main focus today";
+    input.classList.remove(HIDDEN_CLASSNAME);
     focusDiv.classList.add(HIDDEN_CLASSNAME);
 }
 
@@ -32,7 +34,8 @@ delButton.addEventListener("click", handleDel);
 const curFocus = localStorage.getItem("focus")
 
 if(curFocus){
-    focusForm.classList.add(HIDDEN_CLASSNAME);
+    input.classList.add(HIDDEN_CLASSNAME);
     focusDiv.classList.remove(HIDDEN_CLASSNAME);
+    inputSpan.innerText = "today";
     paintFocus(curFocus);
 }

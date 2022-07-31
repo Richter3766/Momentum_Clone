@@ -8,7 +8,7 @@ ul {
 /* background */
 body {
     background-size: cover;
-    background-image: url("../img/005.jpg");
+    background-image: url("../img/007.jpg");
     color: white;
     text-align: center;
 }
@@ -46,20 +46,22 @@ body {
 }
 
 #quotes {
-    position: relative;
-
-    bottom: 5px;
+    align-items: center;
+    display: flex;
+    height: 58px;
+    justify-content: center;
+    box-sizing: content-box;
 }
 
 #focus-form{
     font-size: 36px;
     position: relative;
-    
+
 }
 
 #focus-item{
     font-size: 36px;
-    
+
 }
 
 .block{
