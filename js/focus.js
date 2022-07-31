@@ -16,10 +16,10 @@ function paintFocus(newFocus){
     focusText.innerText = newFocus;
 }
 
+focusForm.addEventListener("submit", handleSubmit);
 const curFocus = localStorage.getItem("focus")
 if(curFocus){
     paintFocus(curFocus);
 } else{
-    focusForm.addEventListener("submit", handleSubmit);
-    input.classList.remove(HIDDEN_CLASSNAME);
+    focusForm.classList.remove(HIDDEN_CLASSNAME);
 }
