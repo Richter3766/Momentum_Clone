@@ -10,5 +10,5 @@ for(let i = 0;i < imgNum;i++){
 const imgIdx = Math.floor(Math.random()*imgName.length) ;
 const curImg = imgName[imgIdx];
 
-body.style.backgroundImage = `url("../${curImg}")`;
+body.style.backgroundImage = `url("${curImg}")`;
 console.log(imgIdx, curImg);
